@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise#1</title>
+    <!-- Author: [Your Name] -->
+</head>
+<body>
+    <h2>Internet Usage Survey</h2>
+    <p>Please fill out the following survey about your Internet usage.</p>
+
+    <form name="survey" method="post">
+        <table cellpadding="15" cellspacing="5" width="65%">
+            <!-- Row 1: Internet Connection Type -->
+            <tr>
+                <td><label for="connection">Type of Internet Connection:</label></td>
+                <td>
+                    <select name="connection" id="connection" size="4">
+                        <option value="dialup" selected>Dial-Up</option>
+                        <option value="dsl">DSL</option>
+                        <option value="cable" >High-Speed Cable</option>
+                        <option value="fiber">Fiber Optic</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Row 2: Type of Computer -->
+            <tr>
+                <td><label>Type of Computer:</label></td>
+                <td>
+                    <input type="radio" name="computer" value="desktop" id="desktop">
+                    <label for="desktop">Desktop</label><br>
+                    <input type="radio" name="computer" value="laptop" id="laptop">
+                    <label for="laptop">Laptop</label><br>
+                    <input type="radio" name="computer" value="tablet" id="tablet">
+                    <label for="tablet">Tablet</label>
+                </td>
+            </tr>
+
+            <!-- Row 3: Main Reason for Using the Internet -->
+            <tr>
+                <td><label>Main Reason for Using the Internet:</label></td>
+                <td>
+                    <input type="radio" name="reason" value="work" id="work">
+                    <label for="work">Work</label><br>
+                    <input type="radio" name="reason" value="education" id="education">
+                    <label for="education">Education</label><br>
+                    <input type="radio" name="reason" value="entertainment" id="entertainment">
+                    <label for="entertainment">Entertainment</label>
+                </td>
+            </tr>
+
+            <!-- Row 4: Types of Sites Visited & Average Weekly Time -->
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Types of Sites Visited Most:</legend>
+                        <input type="checkbox" name="sites[]" value="social" id="social">
+                        <label for="social">Social Media</label><br>
+                        <input type="checkbox" name="sites[]" value="news" id="news">
+                        <label for="news">News</label><br>
+                        <input type="checkbox" name="sites[]" value="shopping" id="shopping">
+                        <label for="shopping">Shopping</label><br>
+                        <input type="checkbox" name="sites[]" value="gaming" id="gaming">
+                        <label for="gaming">Gaming</label>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Average Weekly Time on Internet:</legend>
+                        <input type="radio" name="time" value="0-5" id="0-5">
+                        <label for="0-5">0-5 hours</label><br>
+                        <input type="radio" name="time" value="5-10" id="5-10">
+                        <label for="5-10">5-10 hours</label><br>
+                        <input type="radio" name="time" value="10-20" id="10-20">
+                        <label for="10-20">10-20 hours</label><br>
+                        <input type="radio" name="time" value="20+" id="20+">
+                        <label for="20+">20+ hours</label>
+                    </fieldset>
+                </td>
+            </tr>
+
+            <!-- Row 5: Text Area for Comments -->
+            <tr>
+                <td colspan="2">
+                    <label for="comments">Comments on Internet Privacy and Safety:</label><br>
+                    <textarea id="comments" name="comments" rows="5" cols="100"></textarea>
+                </td>
+            </tr>
+
+            <!-- Row 6: First Name and Last Name -->
+            <tr>
+                <td><label for="fname">First Name:</label><br><input type="text" id="fname" name="fname" size="50"></td>
+                <td><label for="lname">Last Name:</label><br><input type="text" id="lname" name="lname" size="50"></td>
+            </tr>
+
+            <!-- Row 7: Age and Zip Code -->
+            <tr>
+                <td><label for="age">Age:</label><br><input type="text" id="age" name="age" size="5"></td>
+                <td><label for="zipcode">Zip Code:</label><br><input type="text" id="zipcode" name="zipcode" size="10"></td>
+            </tr>
+
+<!-- Row 8: Submit and Reset Buttons -->
+<tr>
+    <td colspan="2" align="center">
+        <input type="submit" value="Submit" style="margin-right: 10px;">
+        <input type="reset" value="Reset">
+    </td>
+</tr>
+
+
+        </table>
+    </form>
+</body>
+</html>
+
